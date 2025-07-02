@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: healthcare-app-deploy
   labels:
-    app: healthcare-app-deploy
+    app: healthcare-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: healthcare-app-deploy
+      app: healthcare-app
   template:
     metadata:
       labels:
-        app: healthcare-app-deploy
+        app: healthcare-app
     spec:
       containers:
       - name: healthcare-app-container
